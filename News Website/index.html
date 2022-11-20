@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>DNBC News - Homepage</title>
+</head>
+
+<body id="body">
+
+    <!-- logo section  -->
+
+    <div class="container-fluid ">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo-section">
+                    <div class="logo-img">
+                        <img src="Images/logo.png" class="img" alt="">
+                    </div>
+                    <div class="s-bar d-flex">
+                        <input type="text" placeholder="Enhanced by Google" class="inp">
+                        <div class="icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- side bar  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <div class="tophead">
+
+                        <i class="fa-solid fa-bars menulines openbtn" onclick="openNav()"></i>
+                        <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+                    </div>
+                </header>
+                <div class="sidenav" id="mySidenav">
+                    <img src="Images/logo.png" class="logo" alt="">
+                    
+                    <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i>Today in World</a>
+                    <a href="#"><i class="fa-solid fa-baseball"></i>Sports</a>
+                    <a href="#"><i class="fa-solid fa-city"></i>Top 5 Cities</a>
+                    <a href="#"><i class="fa-solid fa-address-card"></i>About Us</a>
+                    <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navigation section  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <header class=" head-container">
+
+                    <section class="top">
+                        <div class="icon-section ">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="contact-section">
+                            <i class="fa-sharp fa-solid fa-phone"></i> <span>(091)-555 Today</span>
+                            <i class="fa-regular fa-envelope"></i><span>hello@dnbc.uk</span>
+                            <i class="fa-solid fa-user-plus"></i> <span>Sign In</span>
+                            <i class="fa-solid fa-newspaper"></i> <span>Subscribe</span>
+
+                        </div>
+                    </section>
+                </header>
+                <div>
+                    <nav class="navigation-bar" id="navbar">
+                        <ul class="sticky">
+                            <i class="fa-solid fa-house"></i>
+                            <li>Home</li>
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <li>Today in World
+                                <div class="drop-down right">
+                                    <div class="sub-menu">
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/navpic1.jpg" class="img-fluid" alt="">
+                                            <h1>Hurricane threat as Tropical Storm Fiona aims at Puerto Rico</h1>
+
+                                        </div>
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/nav pic 2.jpg" class="img-fluid" alt="">
+                                            <h1>Strong earthquake hits Taiwan, killing one person and derailing train
+                                            </h1>
+                                        </div>
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/navpic4.jpg" class="img-fluid" alt="">
+                                            <h1>Britain mounts its largest-ever security operation for Queen Elizabeth
+                                                funeral</h1>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-dark">View More</button>
+                                </div>
+                            </li>
+                            <i class="fa-solid fa-baseball"></i>
+                            <li>Sports
+                                <div class="drop-down left">
+                                    <div class="sub-menu">
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/navpic1.jpg" class="img-fluid" alt="">
+                                            <h1>Hurricane threat as Tropical Storm Fiona aims at Puerto Rico</h1>
+
+                                        </div>
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/nav pic 2.jpg" class="img-fluid" alt="">
+                                            <h1>Strong earthquake hits Taiwan, killing one person and derailing train
+                                            </h1>
+                                        </div>
+                                        <div class="dropdown-img">
+                                            <img src="New Trends/navpic4.jpg" class="img-fluid" alt="">
+                                            <h1>Britain mounts its largest-ever security operation for Queen Elizabeth
+                                                funeral</h1>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-dark">View More</button>
+                                </div>
+                            </li>
+                            <i class="fa-sharp fa-solid fa-city"></i>
+                            <li>Top Five Cities In The World
+                                <div class="menu">
+                                    <ul>
+                                        <li>New York City</li>
+                                        <li>Tokyo</li>
+                                        <li>Beijing</li>
+                                        <li>Paris</li>
+                                        <li>London</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <i class="fa-solid fa-address-card"></i>
+                            <li>About Us </li>
+                            <i class="fa-solid fa-address-book"></i>
+                            <li>Contact Us</li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- featured news parts -->
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="slider " data-aos="fade-up">
+                            <img src="Images/pic1.jpg" class="img-fluid " alt="">
+                            <div class="tag mt-3">
+                                <h6>Business</h6>
+                            </div>
+                            <div class="slider-content mt-2" data-aos="fade-right ">
+                                <h1>Stock Exchange Crashed</h1>
+                                <span class="bg-muted">18 September 2022</span>
+                                <span class="bg-muted">Politics</span>
+                                <span class="bg-muted">By Williamson</span>
+                                <div class="para mt-3">
+                                    <p>A stock market crash is a sudden dramatic decline of stock prices across a major
+                                        cross-section of a stock market, resulting in a significant loss of paper
+                                        wealth. Crashes are driven by panic selling and underlying economic factors.
+                                        They often follow speculation and economic bubbles
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <div class="slider" data-aos="fade-up">
+                            <img src="Images/pic2.jpg" class="img-fluid" alt="">
+                            <div class="tag mt-3">
+                                <h6>Business</h6>
+                            </div>
+                            <div class="slider-content mt-2" data-aos="fade-right ">
+                                <h1>Growth Rate Increases by 8.9pc in FY-22</h1>
+                                <span class="bg-muted">18 September 2022</span>
+                                <span class="bg-muted">Politics</span>
+                                <span class="bg-muted">By Williamson</span>
+
+                                <p class=" para mt-3">Growth rates are used to express the annual change in a variable as a
+                                    percentage. A positive growth rate indicates a variable is increasing over time; a
+                                    negative growth rate that it is decreasing. Growth rates can be beneficial in
+                                    assessing a company's performance and to predict future performance.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="slider" data-aos="fade-up">
+                            <img src="Images/pic4.jpg" class="img-fluid" alt="">
+                            <div class="tag mt-3">
+                                <h6>Politics</h6>
+                            </div>
+                            <div class="slider-content mt-2" data-aos="fade-right ">
+                                <h1>10 out of 8 children died of malaria</h1>
+                                <span class="bg-muted">18 September 2022</span>
+                                <span class="bg-muted">Politics</span>
+                                <span class="bg-muted">By Williamson</span>
+                                <div class="para mt-3 ">
+                                    <p>More than one in three malaria deaths occur in two countries: Nigeria and the
+                                        Democratic Republic of the Congo. UNICEF has a country office in all of these
+                                        countries. Sleeping under an insecticide-treated bed net (ITN) is the most
+                                        common and most effective way to prevent malaria infection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12  mt-3">
+                        <div class="slider-content" data-aos="fade-up">
+                            <img src="Images/pic5.jpg" class="img-fluid" alt="">
+                            <div class="tag mt-3">
+                                <h6>Tech</h6>
+                            </div>
+                            <div class="slider-content mt-2" >
+                                <h1>Mobile User Increases</h1>
+                                <span class="bg-muted">18 September 2022</span>
+                                <span class="bg-muted">Politics</span>
+                                <span class="bg-muted">By Williamson</span>
+                            </div>
+                            <div class="para mt-3" >
+                                <p>
+                                    There are projected to be 7.52 billion smartphone users by 2026. That's 12% more
+                                    users than there are currently, which is healthy growth, considering the fact that
+                                    86% of the global adult population already owns a phone. Since 2016, the number of
+                                    smartphone users worldwide has grown by 50%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-3 ">
+                        <div class="slider" data-aos="fade-up">
+                            <img src="Images/pic6.jpg" class="img-fluid" alt="">
+                            <div class="tag mt-3">
+                                <h6>Tech</h6>
+                            </div>
+                            <div class="slider-content mt-2" data-aos="fade-right ">
+                                <h1>IT Export rises by 4pc</h1>
+                                <span class="bg-muted ">18 September 2022</span>
+                                <span class="bg-muted ">Politics</span>
+                                <span class="bg-muted">By Williamson</span>
+                                <div class="para mt-3">
+                                    <p >Information and communication technology goods exports include computers andperipheral equipment, communication equipment, consumer electronic equipment, electronic components, and other information and technology goods. electronic components, and other information and technology goods
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- editor choice  -->
+
+    <div class="container   ">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 mt-5">
+                <div class="page-heading">
+                    <h1> <span> Editor's Choice </span></h1>
+                </div>
+                <div class="row mt-5  ">
+                    <div class="col-md-6 col-12 news-bottom" data-aos="fade-right ">
+                        <h1 class="fs-4 fw-bold" data-aos="fade-right ">Corsair HS20 RGB Wireless Gaming Headset Review</h1>
+                        <div class="icon-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <span class="fs-6 fw-bold">- Good</span>
+                        </div>
+                        <div class="news-bottom mt-3" >
+                            <p class="mt-3" data-aos="fade-right ">As for quality, the HS80's provided clear-cut sound with adequate bass and…
+                            </p>
+                            <div class="new-bottom-part mt-4 ">
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " data-aos="fade-right " alt="">
+                                <span class="fs-6 fw-bold  " data-aos="fade-right ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12    ">
+
+                        <img src="Editor Choice/pic1.jpeg" class="img-fluid" alt="" data-aos="fade-up">
+
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-md-4">
+                            <div class="bottom-content" >
+                                <img src="Editor Choice/pic3.jpeg" class="img-fluid" alt="" data-aos="fade-up">
+                                <div class="bottom-writing mt-2" data-aos="fade-right">
+                                    <h1>Self-Driving Cars: Everything You Need to Know</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bottom-content ">
+                                <img src="Editor Choice/pic4.jpeg" class="img-fluid" data-aos="fade-up" alt="">
+                                <div class="bottom-writing mt-2" data-aos="fade-right">
+                                    <h1>Girls in Ocean Science Conference a First at Maritime Museum</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bottom-content">
+                                <img src="Editor Choice/pic5.jpeg" class="img-fluid" data-aos="fade-up" alt="">
+                                <div class="bottom-writing mt-2" data-aos="fade-right">
+                                    <h1>Google Must Allow Developers to Use Other Payment Systems</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mt-5">
+                <div class="side-content position-relative" data-aos="fade-up">
+                    <img src="Editor Choice/pic2.jpeg" class="img-fluid" alt="">
+                    <div class="img-writing">
+                        <h1>Create an Amazing Newspaper</h1>
+                        <p >Discover thousands of options, easy to customize layouts, one-click to importn
+                            demo and much more</p>
+                        <button class="btn btn-dark">Learn More </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- latest trend  -->
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-heading">
+                    <h1> <span> Latest Trends </span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new trend part -->
+
+    <div class="container mt-5 bg-dark p-5 rounded ">
+        <div class="row gx-5">
+            <div class="col-md-4 ">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" data-aos="zoom-in-up">
+                        <div class="card-slider swiper-slide">
+                            <img src="New Trends/img1.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>21 The Most Stylish Wedding Guest Dresses For Spring</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span> 
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img2.jpg" alt="">
+                            <div class="news-bottom">
+                                <h1>Fashionable Summer Accessories to Dress Up Your Travel Look</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img4.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>Seven Essential Shopping Tips to Save Money</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img5.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>Easy Mistakes That Will Ruin Your Weekend Trips Plan</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img6.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>9 Top Secret Sights You Must See in Asia</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class="fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img7.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>All of the 90s Fashion Trends That Have</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="New Trends/img8.jpeg" alt="">
+                            <div class="news-bottom">
+                                <h1>21 The Most Stylish Wedding Guest Dresses For Spring</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+                <div class="latest-trend" data-aos="zoom-in-up">
+                    <img src="New Trends/pic9.jpeg" class="img-fluid" alt="">
+                    <h1>9 Awesome Destinations for Solo Female Travelers</h1>
+                    <div class="news-bottom">
+                        
+                        <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                        <span class="fs-6 fw-bold  ">Taylor Emma</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="latest-trend" data-aos="zoom-in-up">
+                    <img src="New Trends/pic11.jpeg" class="img-fluid" alt="">
+                    <h1>Personal loan Interest Rates Rise, Still Much Lower than Same Time Last Year</h1>
+                    <div class="news-bottom">
+                        <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                        <span class="fs-6 fw-bold  ">Taylor Emma</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- latest trend's slider  -->
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="swiper mySecondSwiper ">
+                    <div class="swiper-wrapper" data-aos="zoom-in-up">
+                        <div class="  swiper-slide new-trend  ">
+                            <img src="New Trends/slider1.jpg" alt="">
+                            <div class=" news-bottom slider-bottom">
+                                <h1>Dance Classes Resume After Pandemic</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide new-trend">
+                            <img src="New Trends/slider2.jpg" alt="">
+                            <div class="news-bottom slider-bottom ">
+                                <h1>Instagram User Increase Sinc Last Year</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide new-trend">
+                            <img src="New Trends/slider3.jpg" alt="">
+                            <div class="slider-heading">
+                            </div>
+                            <div class="news-bottom slider-bottom ">
+                                <h1>Signal Blockade in Country's Top Cities</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide new-trend">
+                            <img src="New Trends/slider4.jpg" alt="">
+                            <div class="slider-heading ">
+                            </div>
+                            <div class="news-bottom slider-bottom ">
+                                <h1>Dance Classes Resume After Pandemic</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class=" fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide new-trend">
+                            <img src="New Trends/slider5.jpg" alt="">
+                            <div class="slider-heading ">
+                            </div>
+                            <div class="news-bottom slider-bottom ">
+                                <h1>Dance Classes Resume After Pandemic</h1>
+                                <img src="Editor Choice/emma.jpg" class="pic-em img-fluid " alt="">
+                                <span class="fs-6 fw-bold  ">Taylor Emma</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- feature news section  -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="page-heading ">
+                    <h1> <span> Featured News </span></h1>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12 col-12 position-relative">
+                        <div class="move-button">
+                            <div class="fa-solid fa-arrow-right next"></div>
+                            <div class="fa-solid fa-arrow-left prev"></div>
+                        </div>
+                        <div class="swiper myThirdSwiper" data-aos="zoom-in-up">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide fnews-content">
+                                    <img src="New Trends/tn1.jpg" class="img-fluid" alt="">
+                                    <div class="span d-flex mt-2 text-muted">
+                                        <p>Crime / 26 March 2022</p>
+                                    </div>
+                                    <div class="bottom-para mt-2">
+                                        <h1>There May Be No Console In The Future Ea Exac Says</h1>
+                                        <p>A 40-year-old property dealer was shot dead by unidentified bike-borne
+                                            miscreants over a land dispute at Dahi Bhatta village in Masaurhi block of
+                                            Patna on Sunday morning.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="New Trends/tn2.jpg" class="img-fluid" alt="">
+                                    <div class="span d-flex mt-2 text-muted">
+                                        <p>Crime / 26 March 2022</p>
+                                    </div>
+                                    <div class="bottom-para mt-2">
+                                        <h1>There May Be No Console In The Future Ea Exac Says</h1>
+                                        <p>A 40-year-old property dealer was shot dead by unidentified bike-borne
+                                            miscreants over a land dispute at Dahi Bhatta village in Masaurhi block of
+                                            Patna on Sunday morning.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="New Trends/tn3.jpg" class="img-fluid" alt="">
+                                    <div class="span d-flex mt-2 text-muted">
+                                        <p>Crime / 26 March 2022</p>
+                                    </div>
+                                    <div class="bottom-para mt-2">
+                                        <h1>There May Be No Console In The Future Ea Exac Says</h1>
+                                        <p>A 40-year-old property dealer was shot dead by unidentified bike-borne
+                                            miscreants over a land dispute at Dahi Bhatta village in Masaurhi block of
+                                            Patna on Sunday morning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6 col-12">
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                        <div class="side-section">
+                            <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                            <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5 ">
+                <div class="page-heading">
+                    <h1> <span> Follow us </span></h1>
+                </div>
+                <div class="social-following mt-5" data-aos="zoom-in-up">
+                    <a href="#">
+                        <div class="facebook ">
+                            <i class="fa fa-brands fa-facebook"></i>
+                            <span>Facebook</span>
+                        </div>
+
+                    </a>
+                    <a href="#">
+                        <div class="twitter">
+
+                            <i class="fa fa-brands fa-twitter"></i>
+                            <span>Twitter</span>
+                        </div>
+
+                    </a>
+                    <a href="#">
+                        <div class="youtube">
+
+                            <i class="fa fa-brands fa-youtube"></i>
+                            <span>Youtube</span>
+                        </div>
+
+                    </a>
+                    <a href="#">
+                        <div class="instagram">
+
+                            <i class="fa fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </div>
+
+                    </a>
+                    <a href="#">
+                        <div class="vimeo">
+
+                            <i class="fa fa-brands fa-vimeo"></i>
+                            <span>Vimeo</span>
+                        </div>
+
+                    </a>
+                    <a href="#">
+                        <div class="pinterest">
+
+                            <i class="fa fa-brands fa-pinterest"></i>
+                            <span>Pinterest</span>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="page-heading mt-5">
+                    <h1> <span> Most View </span></h1>
+                </div>
+                <div class="side-section">
+                    <img src="New Trends/most-1.jpg" alt="" data-aos="zoom-in-up">
+                    <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                </div>
+                <div class="side-section">
+                    <img src="New Trends/most-2.jpg" alt="" data-aos="zoom-in-up">
+                    <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                </div>
+                <div class="side-section">
+                    <img src="New Trends/most-3.jpg" alt="" data-aos="zoom-in-up">
+                    <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                </div>
+                <div class="side-section">
+                    <img src="New Trends/most-4.jpg" alt="" data-aos="zoom-in-up">
+                    <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                </div>
+                <div class="side-section">
+                    <img src="New Trends/most-5.jpg" alt="" data-aos="zoom-in-up">
+                    <h1>Nancy Zhang A Chinese Business Women in California</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- client review -->
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-heading ">
+                    <h1> <span> Client's Review </span></h1>
+                </div>
+                <div class="slide-container swiper mt-5">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile2.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">George </h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile3.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">Thomas</h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile1.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">Hamilton</h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile4.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">William</h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile5.jpeg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">Freguson</h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile6.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name"> Dell</h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" data-aos="fade-up">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="New Trends/profile7.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">David </h2>
+                                    <p class="description">
+                                        I signed up for a free trial, and wasn't able to pull even 1 item I was looking for. I canceled my membership on time, yet they still took $73 dollars from my checking account and they will not respond to the 4 emails and messages I have left over the past week, and still have not refunded my money.
+                                    </p>
+
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer part -->
+fn
+    <footer class="mt-5 footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
+                    <div class="single-box">
+                        <img src="Images/logo.png" alt="">
+                        <p>
+                            Add a call-to-action in both your video and channel description. Encourage viewers to like, comment, subscribe, or read more.
+                        </p>
+                        <h3>We Accect</h3>
+                        <div class="card-area">
+                            <i class="fa fa-brands fa-cc-visa"></i>
+                            <i class="fa fa-brands fa-cc-mastercard"></i>
+                            <i class="fa fa-brands fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
+                    <div class="single-box">
+                        <h2>Useful Link</h2>
+                        <ul>
+                            <li><a href="#">Privary</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Security Service</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Public Domain</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
+                    <div class="single-box">
+                        <h2>Domain</h2>
+                        <ul>
+                            <li><a href="#">Web Domain</a></li>
+                            <li><a href="#">Cloud Domain</a></li>
+                            <li><a href="#">CMS Domain</a></li>
+                            <li><a href="#">WordPress Domain</a></li>
+                            <li><a href="#">Email Domain</a></li>
+                            <li><a href="#">VPS Domain</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
+                    <div class="single-box">
+                        <h2>Newsletter</h2>
+                        <p>Our daily email provides analysis of every match and stories from Qatar that you won't see on TV. Subscriber-Only Newsletters. Enjoy exclusive newsletters</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa fa-long-arrow-right"></i></span>
+                        </div>
+                        <h2>Follow us on</h2>
+                        <p class="socials">
+                            <i class="fa fa-brands fa-facebook"></i>
+                            <i class="fa fa-brands fa-dribbble"></i>
+                            <i class="fa fa-brands fa-pinterest"></i>
+                            <i class="fa fa-brands fa-twitter"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll to top button  -->
+
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+</body>
+
+</html>

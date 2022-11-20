@@ -1,0 +1,304 @@
+* {
+    font-family: sans-serif;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-img .img {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.s-bar {
+    position: relative;
+    right: 0;
+    transform: translateY(25%);
+    padding: 2px;
+}
+
+.inp {
+    height: 40px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border-right: none;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+}
+
+.s-bar .fa-solid {
+    padding: 9px 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.head-container {
+    border: 2px solid black;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
+
+.heading>h1 {
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 0px 2px 0px orangered;
+    transform: translateY(60%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-section i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-section i {
+    padding: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navigation-bar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+.navigation-bar ul {
+
+    position: relative;
+}
+
+.navigation-bar ul li {
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 20px;
+    cursor: pointer;
+
+}
+
+.navigation-bar ul li:hover {
+    text-shadow: 1px 1px 1px  lightslategray;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.sticky {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+
+}
+
+.sticky ul {
+    justify-content: end;
+    box-shadow: 1px 1px 20px 1px gray;
+}
+
+.heading h1:hover {
+    color: orangered;
+}
+
+.icon-section>i:hover {
+    color: orangered;
+}
+
+.drop-down {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 2px solid #fff;
+    width: 50%;
+    z-index: 999;
+    display: none;
+    animation: animate 0.5s ease;
+    
+}
+@keyframes animate {
+    0%{
+        margin-top: 20px;
+    }
+    
+}
+
+.sub-menu {
+    display: flex;
+    padding: 10px;
+    
+}
+
+.dropdown-img {
+    padding: 10px;
+    text-shadow: none;
+}
+
+
+.left {
+    right: 20%;
+}
+
+.right {
+    left: 10%;
+}
+
+.dropdown-img h1 {
+    color: #262732;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.drop-down h1:hover{
+    text-shadow: 1px 1px 1px lightslategray;
+}
+
+.navigation-bar ul li:hover .drop-down {
+    display: block;
+    box-shadow: 0px 0px 20px 0px #fff;
+    
+}
+
+.drop-down button {
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul  {
+    
+    position: absolute;
+    top: 80%;
+    
+    display: block;
+    padding: 10px;
+
+}
+
+.menu ul li {
+    color: #262732;
+    border-bottom: 1px dotted black;
+    text-align: center;
+    text-shadow: none;
+    
+}
+
+.navigation-bar ul li:hover .menu {
+    display: block;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #262732;
+    z-index: 2;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidenav a i {
+    padding: 10px;
+}
+
+.tophead {
+    position: absolute;
+    font-size: 25px;
+    background-color: #262732;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.menulines {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    padding: 30px 0 30px 20px;
+}
+
+.sidenav a:hover {
+    color: orangered;
+}
+.openbtn, .closebtn{
+    display: none;
+}
+
+
+@media screen and (max-width:990px) {
+    .tophead {
+
+        position: fixed;
+        top: 3%;
+        left: 3%;
+        z-index: 999;
+    }
+    .openbtn{
+        display: block;
+    }
+    .head-container,
+    .navigation-bar {
+        display: none;
+    }
+
+    .s-bar>input,
+    .icon {
+        display: none;
+    }
+
+    .logo-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sticky ul {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1099px) {
+    .navigation-bar ul li {
+        font-size: 0.8rem;
+    }
+}
