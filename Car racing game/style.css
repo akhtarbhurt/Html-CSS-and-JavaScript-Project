@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.track{
+    background-image: url(track.jpg);
+    width: 200vw;
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid red;
+}
+.race-car{
+    background-image: url(race_car\ -\ Copy.png);
+    width: 10%;
+    height: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.animateCar{
+    animation: moveCar 6s linear;
+}
+
+@keyframes moveCar {
+    0%{
+        left: 15%;
+    }
+    50%{
+        left: 100vw;
+    }
+    100%{
+        left: 200vw;
+    }
+}
+.user-car{
+    background-image: url(user-car\ -\ Copy.png);
+    width: 11%;
+    height: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    transition: all 0.1s linear;
+}
+
+.countdown{
+    width: 50%;
+    height: 50vh;
+    background-color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.countdown h1{
+    text-align: center;
+    font-size: 50px;
+}
+.block{
+    display: none;
+}
+.result{
+    height: 20vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 150vw;
+    font-size: 50px;
+}
+.result.active{
+    display: none;
+}
+.finish-line{
+    width: 20%;
+    height: 95vh;
+    background-color: black;
+    position: absolute;
+    left: 180vw;
+    top: 5%;
+    color: wheat;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
